@@ -1,0 +1,38 @@
+
+/* Handle very narrow viewports. */
+@media screen and (max-width: 800px) {
+	body {
+		margin: 0;
+	}
+	#ui-bar {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 2.5% 3.5% 0;
+		border: none;
+		border-bottom: 1px solid #fff;
+	}
+	#ui-bar header, #story-caption {
+		text-align: left;
+		width: 66%;
+	}
+	#menu {
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 2.5% 3.5% 0 0;
+	}
+	#menu ul {
+		margin: 0;
+	}
+	#menu li {
+		margin-bottom: 0.5em;
+	}
+	#passages {
+		width: auto;
+		margin: 1.5em 3.5% 3.5%;
+	}
+}

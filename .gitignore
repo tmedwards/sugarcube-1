@@ -1,0 +1,14 @@
+# Scripts
+*.sh
+
+# Documentation
+*.html
+
+# Development
+dist/
+node_modules/
+
+# Miscellaneous
+_*
+CHANGELOG*
+TODO*

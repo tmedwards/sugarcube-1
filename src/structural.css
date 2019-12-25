@@ -1,0 +1,82 @@
+
+body {
+	margin: 3.5em 3.5em 3.5em 21em;
+}
+
+#store-area {
+	display: none;
+	z-index: 0;
+}
+
+#ui-bar {
+	position: fixed;
+	z-index: 50;
+	top: 0;
+	left: 0;
+	width: 14.5em;
+	height: 100%;
+	margin: 0;
+	padding: 3.5em 1.5em 0 3.5em;
+}
+
+/* Default dialog styling */
+html.ui-open body {
+	overflow: hidden;
+}
+#ui-overlay {
+	display: none;
+	z-index: 1000;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+}
+#ui-body-close {
+	display: none;
+	z-index: 1110;
+	position: fixed;
+	white-space: nowrap;
+}
+#ui-body {
+	display: none;
+	z-index: 1100;
+	position: fixed;
+	overflow: auto;
+	min-width: 140px;
+	max-width: 90%;
+	max-height: 90%;
+}
+
+/* Options dialog styling */
+#ui-body.options [id|="option-body"] {
+	display: table;
+	width: 100%;
+}
+#ui-body.options [id|="option-label"] {
+	display: table-cell;
+	width: 80%;
+	padding: 0.33em 2em 0.4em 0.33em;
+}
+#ui-body.options [id|="option-control"] {
+	display: table-cell;
+	padding: 0.33em 0.33em 0.4em;
+	white-space: nowrap;
+}
+
+/* Passages area styling */
+#passages {
+	z-index: 10;
+	margin-right: 16%;
+}
+
+/* Stop text selection on UI widgets */
+button, #ui-body-close, #ui-body.dialog-list a, #ui-body.options a[id|="option-input"] {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+

@@ -1,0 +1,10 @@
+
+#init-screen { display: none; z-index: 100000; position: fixed; top: 0px; left: 0px; height: 100%; width: 100%; font-size: 28px; text-align: center; }
+#init-screen p { display: none; width: 75%; margin: 2em auto; font-weight: bold; font-style: italic; }
+#init-loading progress { height: 20px; /* fixes a rendering bug in Chrome on certain platforms */ }
+html.init-no-js #init-screen, html.init-lacking #init-screen, html.init-loading #init-screen { display: block; }
+html.init-no-js #init-no-js { display: block; }
+html.init-lacking #init-lacking { display: block; }
+html.init-loading #init-loading { display: block; }
+html.init-loading #ui-bar, html.init-loading #passages { display: none; }
+html.init-no-js #init-no-js, noscript { color: red; font-weight: bold; }

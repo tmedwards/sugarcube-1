@@ -1,0 +1,19 @@
+
+/* Increase viewport utilization as its size decreases. */
+@media screen and (max-width: 1440px) {
+	#passages {
+		margin-right: 8%;
+	}
+}
+@media screen and (max-width: 1136px) {
+	body {
+		margin: 3.5% 3.5% 3.5% 20em;
+	}
+	#ui-bar {
+		padding-top: 3.5%;
+		padding-left: 2.5em;
+	}
+	#passages {
+		margin: 0;
+	}
+}
